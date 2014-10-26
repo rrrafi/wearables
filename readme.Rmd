@@ -1,0 +1,33 @@
+---
+title: "readme"
+output: html_document
+---
+
+The script run_analysis.R performs the following steps, each of which is commented in the code itself:
+- Loads training & test sets and combines them via rbind
+- Feature (variable) names are added as column names
+- The activity (ys from training/test) is added as another column
+- The subject ID is added as another column
+- A new dataframe is created that maintains only variable mean & std deviation columns (and activity and ID columns)
+- A further summary dataframe is created showing the average value per variable, per activity, per subject
+- The summary dataframe is saved as "wearables.txt" in the current working directory
+
+
+
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
